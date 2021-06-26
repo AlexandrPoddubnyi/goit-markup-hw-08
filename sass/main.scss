@@ -1,0 +1,23 @@
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/adress";
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/modal-window";
+@import "./components/social-icons";
+@import "./components/social-links";
+@import "./components/modal-menu.scss";
+
+@import "./layouts/header";
+@import "./layouts/navigation";
+@import "./layouts/hero";
+@import "./layouts/advanteges";
+@import "./layouts/working";
+@import "./layouts/team";
+@import "./layouts/background";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio-content";
+
+@import "./utils/variables";

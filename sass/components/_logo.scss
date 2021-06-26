@@ -1,0 +1,19 @@
+.logo {
+  font-family: var(--logo-text);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
+.adress__logo--color {
+  color: var(--logoblueword-color);
+}

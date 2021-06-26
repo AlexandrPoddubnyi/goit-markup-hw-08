@@ -1,0 +1,13 @@
+.social-icons {
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.social-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons__icon {
+  fill: var(--svgicons-color);
+  transition: var(--transformation);
+}

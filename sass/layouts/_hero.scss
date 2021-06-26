@@ -1,0 +1,110 @@
+.hero-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  height: 400px;
+  text-align: center;
+  // padding-top: 200px;
+  // padding-bottom: 280px;
+  background-image: linear-gradient(
+      var(--backgroundgradient-color),
+      var(--backgroundgradient-color)
+    ),
+    url("../images/hero/hero_480.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--backgroundgradient-color),
+          var(--backgroundgradient-color)
+        ),
+        url("../images/hero/hero@2x_480.jpg");
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        var(--backgroundgradient-color),
+        var(--backgroundgradient-color)
+      ),
+      url("../images/hero/hero_768.jpg");
+    height: 400px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--backgroundgradient-color),
+          var(--backgroundgradient-color)
+        ),
+        url("../images/hero/hero@2x_768.jpg");
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        var(--backgroundgradient-color),
+        var(--backgroundgradient-color)
+      ),
+      url("../images/hero/hero_1200.jpg");
+    max-width: 1600px;
+    height: 600px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--backgroundgradient-color),
+          var(--backgroundgradient-color)
+        ),
+        url("../images/hero/hero@2x_1200.jpg");
+      max-width: 1600px;
+      height: 600px;
+    }
+  }
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--maintitle-color);
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 60px;
+    max-width: 696px;
+  }
+}
