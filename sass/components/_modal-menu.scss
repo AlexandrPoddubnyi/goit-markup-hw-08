@@ -1,6 +1,7 @@
 .modal-menu {
   display: flex;
   // position: relative;
+  align-items: center;
 
   @media screen and (max-width: 767px) {
     display: none;

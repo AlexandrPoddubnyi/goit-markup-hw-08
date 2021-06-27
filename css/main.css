@@ -220,22 +220,19 @@ body {
 .content-buttons__list {
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 50px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .content-buttons__list {
     justify-content: flex-start;
-    padding-bottom: 0px;
-    margin-bottom: -5px;
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .content-buttons__list {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -244,7 +241,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .content-buttons__item {
+  .content-buttons__item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
 }
@@ -561,6 +558,7 @@ textarea::placeholder {
 
 .modal-menu {
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -733,8 +731,10 @@ textarea::placeholder {
   }
 }
 
-.header-box__logo {
-  margin-right: 88px;
+@media screen and (min-width: 768px) {
+  .header-box__logo {
+    margin-right: 88px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -757,8 +757,6 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .header-contacts {
-    margin-top: auto;
-    margin-bottom: auto;
     flex-direction: column;
     align-items: unset;
   }
@@ -1274,6 +1272,12 @@ textarea::placeholder {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__adress-box {
+    margin-right: 0px;
+  }
+}
+
 .footer__list {
   list-style-type: none;
   padding-left: 0px;
@@ -1412,9 +1416,12 @@ textarea::placeholder {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--margincard));
+  margin-top: -30px;
 }
 
 .content-cardset__item {
+  display: flex;
+  flex-direction: column;
   margin-left: var(--margincard);
   margin-top: var(--margincard);
   flex-basis: calc((100% - 3 * var(--margincard)) / 3);
@@ -1488,6 +1495,7 @@ textarea::placeholder {
 }
 
 .content-cardset__atributes {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid var(--porfolioborders);
   border-bottom: 1px solid var(--porfolioborders);
